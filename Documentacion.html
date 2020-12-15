@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Documentacion del curso de GIT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <dl>
+        <dt>git add .</dt>
+            <dd>Mete todos los ficheros que se hayan modificado para hacer el commit</dd>
+            
+        <dt>git add fichero</dt>
+            <dd>Mete el fichero que hayas puesto para hacer el commit</dd>
+            
+        <dt>git commit</dt>
+            <dd>hace el commit de lo que ya se ha preparado</dd>
+            
+        <dt>Esc :wq</dt>
+            <dd>salir del vim</dd>
+            
+        <dt>git reset --soft HEAD~1</dt>
+            <dd>elimina el commit sin eliminar los cambios, dejandolos preparados para poder volver a hacer commit</dd>
+            
+        <dt>git commit -m "comentario"</dt>
+            <dd>hace directamente el commit metiendo el comentario entrecomillado</dd>
+            
+        <dt>git remote -v</dt>
+            <dd>saber la url de nuetro servidor</dd>
+            
+        <dt>git push origin master</dt>
+            <dd>sube a github mis commits</dd>
+            
+        <dt>git pull origin master</dt>
+            <dd>descargas desde la rama remota a la rama en la que estas en ese momento.</dd>
+            
+        <dt>git commit -am </dt>
+            <dd>hace commit de todo y la m para meter el mensaje</dd>
+            
+        <dt>git branch</dt>
+            <dd>te muestra las ramas que tienes</dd>
+            
+        <dt>git branch rama-nueva</dt>
+            <dd>te crea una rama con el nombre que hayas puesto</dd>
+            
+        <dt>git checkout rama-a-la-que-quiero-cambiar</dt>
+            <dd>cambias a la rama que quieres</dd>
+            
+        <dt>git log --graph --decorate --oneline --all</dt>
+            <dd>ves los commits que has ido haciendo</dd>
+            
+        <dt>para hacer el merge de ramas que ya estan creadas, dentro de la master: </dt>
+        <dd>ir a la rama master, </dd>
+        <dd>git merge laramaquequiera</dd>
+        
+        <dt>git diff rama</dt>
+            <dd>muestra las diferencias entre la rama en la que estas y la que tu quieres</dd>
+            
+        <dt>git rm cosa</dt>
+            <dd>Confirma la eliminacion de algo</dd>
+            
+        <dt>git branch -d nombreDeLaRama</dt>
+            <dd>elimina la rama que has puesto porque ya la hemos integrado(comprueba que no pierdas trabajo)</dd>
+            
+        <dt>git -D rama</dt>
+            <dd>elimina la rama si o si pero se queda en una 'papelera'</dd>
+        
+        <dt>git gc</dt>
+            <dd>limpia la basura</dd>
+            
+        <dt>git --amend</dt>
+            <dd>puedes modificar tu ultimo commit. NO HACERLO PUSHEADO</dd>
+            
+        <dt>git checkout -b rama</dt>
+            <dd>crea la rama y te mueve a ella directamente</dd>
+            
+        <dt>en el commit-> Closes #1</dt>
+            <dd>Cierra la issue con ese numero.</dd>
+            
+        <dt>Fork</dt>
+            <dd>Crea una copia de un repositorio de otro usuario haciendo a ti el 'propietario' de ese repositorio, pudiendo hacer luego un pull request al resposittorio original para pasar mis cambios.</dd>
+            
+        </dl>
+</body>
+</html>
